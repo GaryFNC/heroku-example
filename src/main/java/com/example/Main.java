@@ -87,7 +87,7 @@ String hello(Map<String, Object> model) {
        energy = "12 GeV";
     }
     Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
-    model.put("scienceBR1", "E=mc^2: " + energy + " = "  + m.toString());
+    model.put("science", "BR1 -- E=mc^2: " + energy + " = "  + m.toString());
     return "hello";
 }
 
